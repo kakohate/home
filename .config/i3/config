@@ -95,6 +95,8 @@ bindsym $mod+Shift+e exec i3-msg exit
 
 bindsym $mod+Shift+n exec i3lock -c 000000
 
+bindsym $mod+Print exec gnome-screenshot -i
+
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
@@ -115,11 +117,11 @@ bindsym $mod+r mode "resize"
 
 bar {
         status_command i3status
-	font pango:Noto Sans Mono, Icons 9
-	mode dock
-	position top
-	workspace_buttons yes
-	strip_workspace_numbers yes
-	binding_mode_indicator yes
-	tray_padding 4
+        font pango:Noto Sans Mono, Icons 9
+        mode dock
+        position top
+        workspace_buttons yes
+        strip_workspace_numbers yes
+        binding_mode_indicator yes
+        tray_padding 4
 }

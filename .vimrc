@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'vim-jp/vimdoc-ja'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -32,6 +32,11 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smartindent smartt
 set timeoutlen=100
 set virtualedit=all
 set wildmenu wildmode=longest,full
+
+
+let g:ale_fixers = {}
+let g:ale_fixers['ruby'] = ['rufo']
+let g:ale_fix_on_save = 1
 
 filetype plugin indent on
 syntax on
