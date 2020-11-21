@@ -13,7 +13,7 @@ if [ -f ~/.zplug/init.zsh ]; then
     zplug load
 fi
 
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/go
 export PATH=$HOME/.local/bin:$GOPATH/bin:$HOME/ghq/github.com/flutter/flutter/bin:$HOME/.yarn/bin:$HOME/.gem/ruby/2.7.0/bin:$PATH
 export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 export ANDROID_HOME=$HOME/Android/Sdk

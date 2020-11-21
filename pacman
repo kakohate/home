@@ -1,3 +1,5 @@
+networkmanager
+
 xorg
 xorg-xinit
 
@@ -5,8 +7,12 @@ i3
 rofi
 termite
 
+tig
+
 fcitx
+fcitx-configtool
 fcitx-im
 fcitx-mozc
 noto-fonts
 noto-fonts-emoji
+noto-fonts-cjk
